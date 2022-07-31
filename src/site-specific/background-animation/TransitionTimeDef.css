@@ -1,0 +1,13 @@
+
+
+@property --transition-time {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+
+@property --floor {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false /* or true depending on context */
+}

@@ -1,0 +1,11 @@
+@use 'Heading';
+
+$title-font-size: 40px;
+
+.title {
+    font-size: $title-font-size;
+}
+
+.title .visitParagraph {
+    font-size: Heading.$link-font-size - Heading.$heading-font-size  + $title-font-size;
+}

@@ -1,0 +1,10 @@
+@use 'Theme';
+
+$default-padding: 10px;
+$border-radius: 10px;
+
+.card {
+    background-color: Theme.$pane-color;
+    padding: $default-padding;
+    border-radius: $border-radius;
+}

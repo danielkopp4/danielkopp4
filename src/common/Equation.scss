@@ -1,0 +1,19 @@
+@use "Theme";
+
+.referenced .blockedEquation {
+
+    span {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: inline;
+    }
+
+}
+
+.katex-display .katex .katex-html {
+    display: inline;
+}
+
+.katex-display .katex {
+    display: inline;
+}

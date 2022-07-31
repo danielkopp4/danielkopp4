@@ -1,0 +1,13 @@
+
+$from-top: 50%;
+$from-left: 50%;
+
+
+.logoAnimation {
+    position: absolute;
+    left: $from-left;
+    top: $from-top;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

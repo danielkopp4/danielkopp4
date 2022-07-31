@@ -1,0 +1,17 @@
+@use 'Theme';
+@use 'Card';
+
+$font-size: 14px;
+$padding: 10px;
+
+.codeBlock pre {
+    background: Theme.$pane-color !important;
+    border-radius: Card.$border-radius;
+    padding: $padding !important;
+    cursor: text;
+}
+
+.codeBlock code {
+    font-family: Theme.$mono-font !important;
+    font-size: $font-size;
+}

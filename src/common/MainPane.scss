@@ -1,0 +1,10 @@
+@use 'Theme';
+@use 'sass:math';
+
+$margin-top: 30px;
+
+.mainPane {
+    // margin-left: math.div(100% - $width, 2);
+    margin: auto;
+    margin-top: $margin-top;
+}

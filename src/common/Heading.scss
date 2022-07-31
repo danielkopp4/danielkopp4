@@ -1,0 +1,22 @@
+@use 'Theme';
+
+$link-font-size: 22px;
+$heading-font-size: 30px;
+
+.visitParagraph {
+    color: Theme.$secondary-text-color;
+    font-size: $link-font-size;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.visitParagraph:hover {
+    border-bottom: 2px dotted Theme.$secondary-text-color;
+}
+
+.headingText {
+    font-weight: bold;
+    font-size: $heading-font-size;
+    color: Theme.$header-color;
+    line-height: 50%;
+}

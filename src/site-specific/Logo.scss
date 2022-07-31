@@ -1,0 +1,17 @@
+@use '../common/Theme';
+
+@mixin logo {
+    font-family: Theme.$logo-font;
+    text-decoration: none;
+    color: Theme.$text-color;
+}
+
+.shortLogo {
+    @include logo;
+    font-size: 20px;
+}
+
+.fullLogo {
+    @include logo;
+    font-size: 60px;
+}

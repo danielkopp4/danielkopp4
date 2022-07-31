@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Google+Sans|Oxygen+Mono|Space+Mono');
+
+$base-color: rgb(29, 30, 32);
+$item-color: rgb(46, 46, 51);
+$text-color: rgb(200, 200, 200);
+$header-color: rgb(218, 218, 218);
+$secondary-text-color: rgb(165, 165, 165);
+$pane-color: rgb(46, 46, 51);
+$secondary-pane-color: rgb(62, 62, 69);
+$background-text-color: rgb(155, 156, 157);
+
+// $primary-font: "Open Sans", sans-serif;
+$primary-font: "Google Sans", sans-serif;
+$logo-font: "Monoton", sans-serif;
+$mono-font: "Space Mono", monospaced;
+// $mono-font: "Oxygen Mono", monospaced;
+
+@mixin standardTheme {
+    background-color: $base-color;
+    color: $text-color;
+    font-family: $primary-font;
+    // font-weight: lighter;
+}
+
+@mixin wrapPane($padding: 10px, $border-radius: 12px) {
+    background-color: $pane-color;
+    padding: $padding;
+    border-radius: $border-radius;
+}
+
+ul {
+    list-style-type: " - ";
+}
+
+.monospaced {
+    font-family: $mono-font;
+}
+
+body {
+    @include standardTheme();
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:export {
+    text-color: $text-color;
+    // $base-color: rgb(29, 30, 32);
+    // $item-color: rgb(46, 46, 51);
+    text-color: $text-color;
+    header-color: $header-color;
+    secondary-text-color: $secondary-text-color;
+    pane-color: $pane-color;
+    // $secondary-pane-color;
+    // $background-text-color;
+}

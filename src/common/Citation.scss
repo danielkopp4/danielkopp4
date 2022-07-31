@@ -1,0 +1,18 @@
+@use 'Theme';
+
+$font-size: 12px;
+
+.citation {
+    font-size: $font-size;
+
+    :not(.reference) {
+        color: Theme.$text-color;
+        transition: 0.5s;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+            color: Theme.$secondary-text-color;
+        }
+    }
+}

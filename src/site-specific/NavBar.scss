@@ -1,0 +1,40 @@
+@use '../common/Theme';
+@use 'sass:math';
+
+$ud-margin: 5px;
+$lr-margin: 100%;
+$padding: 5px;
+
+$ud-padding-logo: 10%;
+$lr-padding: 5%;
+$line-height: 25px;
+
+.navLink div {
+    margin-right: 6.5%;
+    float: right;
+    text-decoration: none;
+    color: Theme.$text-color;
+    transition: 0.3s;
+    text-align: center;
+    padding: $padding;
+    line-height: $line-height;
+
+    &:hover {
+        color: Theme.$secondary-text-color;
+    }
+
+}
+
+
+.logoWrapper {
+    margin-top: $ud-margin - 5px;
+    display: inline-block;
+    margin-left: 5%;
+    text-align: center;
+    padding: $padding;
+    line-height: $line-height;
+}
+
+.navBar {
+    margin-bottom: 20px;
+}

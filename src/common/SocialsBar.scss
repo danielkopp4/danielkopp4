@@ -1,0 +1,56 @@
+@use "../common/Theme";
+
+$linkedin-size: 35px;
+$gh-size: 32px;
+$margin-amount: 3px;
+
+.linkedInSVG {
+    // transform: scale(0.7);
+    // width: inherit;
+    // height: inherit;
+    width: $linkedin-size;
+    height: $linkedin-size;
+
+    #lin-path {
+        fill: Theme.$text-color;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        #lin-path {
+            fill: Theme.$secondary-text-color;
+        }
+    }
+
+    &:active {
+        #lin-path {
+            fill: Theme.$header-color;
+        }
+    }
+
+    margin: $margin-amount;
+}
+
+.githubSVG {
+    width: $gh-size;
+    height: $gh-size;
+
+    #gh-path {
+        fill: Theme.$text-color;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        #gh-path {
+            fill: Theme.$secondary-text-color;
+        }
+    }
+
+    &:active {
+        #gh-path {
+            fill: Theme.$header-color;
+        }
+    }
+
+    margin: $margin-amount;
+}

@@ -1,0 +1,60 @@
+@use 'Theme';
+
+$scale-amount: 1.02;
+$title-font-size: 25px;
+$default-padding: 30px;
+$margin: 20px;
+$height: 130px;
+$description-line-height: 1.5;
+$shrink-amount: 1 / $scale-amount;
+$overflow-mult-default: 0.55;
+
+.previewCard a {
+    text-decoration: none;
+    color: Theme.$text-color;
+}
+
+.previewCard {
+    --height-mult: #{$overflow-mult-default};
+}
+
+.previewCard .card {
+    transition: all 0.5s;
+    padding: $default-padding;
+    margin: $margin;
+    height: $height;
+
+    .childrenContainer {
+        overflow: hidden;
+        line-height: $description-line-height;
+        height: calc(var(--height-mult) * $height);
+    }
+
+    &:hover {
+        background-color: Theme.$secondary-pane-color;
+        -webkit-transform: scale($scale-amount, $scale-amount);
+        transform: scale($scale-amount, $scale-amount);
+    }
+
+    &:active {
+        background-color: Theme.$secondary-pane-color;
+        -webkit-transform: scale($shrink-amount, $shrink-amount);
+        transform: scale($shrink-amount, $shrink-amount);
+    }
+}
+
+.previewCard .children {
+    font-size: 12px;
+    color: Theme.$background-text-color;
+    // margin-bottom: 30px;
+}
+
+.previewCard .title {
+    font-size: $title-font-size;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.previewCard {
+    padding: 0px;
+}

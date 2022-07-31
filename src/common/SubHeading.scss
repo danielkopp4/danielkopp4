@@ -1,0 +1,11 @@
+@use 'Theme';
+
+$sub-heading-size: 12px;
+$margin-left: 0%;
+
+.subHeadingText {
+    font-size: $sub-heading-size;
+    color: Theme.$secondary-text-color;
+    line-height: normal;
+    margin-left: $margin-left;
+}

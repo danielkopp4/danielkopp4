@@ -1,0 +1,75 @@
+@use "Circle";
+@use "../../common/Theme";
+@use "sass:math";
+
+$max-circle-radius: 1500px;
+
+@keyframes grow {
+    from {--transition-time: 0 }
+    to { --transition-time: 1 }
+}
+
+.animation {
+    --transition-time: 0; // fallback
+    z-index: -10;
+    pointer-events: none 
+}
+
+.animation .circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: grow 5s linear infinite;
+}
+
+
+@mixin getCircle($phase-offset) {
+    --rm-raw: calc(var(--transition-time) + #{$phase-offset});
+    --floor: calc(var(--rm-raw) - .5);
+    --radius-mult: calc(var(--rm-raw) - var(--floor));
+    @include Circle.circle($radius: (calc(#{$max-circle-radius} * #{var(--radius-mult)})), $color: Theme.$secondary-text-color);
+    opacity: calc(1 - var(--radius-mult));
+}
+
+.animation .circle0 {
+    @include getCircle(0);
+}
+
+.animation .circle1 {
+    @include getCircle(0.2);
+}
+
+.animation .circle2 {
+    @include getCircle(0.4);
+}
+
+.animation .circle3 {
+    @include getCircle(0.6);
+
+}
+
+.animation .circle4 {
+    @include getCircle(0.8);
+}
+
+.backgroundAnimation-enter .circle {
+    --transition-time: 0; // ends at 1
+}
+
+.backgroundAnimation-enter-done .circle {
+    --transition-time: 0; // ends at 1
+}
+
+.backgroundAnimation-active .circle {
+    --transition-time: 0; // ends at 1
+}
+
+.backgroundAnimation-exit .circle {
+    --transition-time: 1; // ends at 1
+}
+
+.backgroundAnimation-active .circle {
+    --transition-time: 0; // ends at 1
+}

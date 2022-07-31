@@ -1,0 +1,16 @@
+@use "../site-specific/LogoAnimation";
+
+$font-size: 13px;
+$margin-top: 26%;
+$from-logo-left: 0%;
+$from-logo-top: 5%;
+
+.homePageText {
+    position: absolute;
+    top: LogoAnimation.$from-top + $from-logo-top;
+    left: LogoAnimation.$from-left;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: $font-size;
+}
