@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/danielkopp4/static/css/main.2e34e9b1.css",
-    "main.js": "/danielkopp4/static/js/main.08099313.js",
+    "main.js": "/danielkopp4/static/js/main.c2eb701a.js",
     "static/js/787.4c3a4a1c.chunk.js": "/danielkopp4/static/js/787.4c3a4a1c.chunk.js",
     "static/media/github.svg": "/danielkopp4/static/media/github.994354b00477e00c5a29ebce80ae2e3f.svg",
     "index.html": "/danielkopp4/index.html",
     "static/media/linkedin.svg": "/danielkopp4/static/media/linkedin.48886729e5191ac897fd4296cdeb6f01.svg",
     "main.2e34e9b1.css.map": "/danielkopp4/static/css/main.2e34e9b1.css.map",
-    "main.08099313.js.map": "/danielkopp4/static/js/main.08099313.js.map",
+    "main.c2eb701a.js.map": "/danielkopp4/static/js/main.c2eb701a.js.map",
     "787.4c3a4a1c.chunk.js.map": "/danielkopp4/static/js/787.4c3a4a1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2e34e9b1.css",
-    "static/js/main.08099313.js"
+    "static/js/main.c2eb701a.js"
   ]
 }
